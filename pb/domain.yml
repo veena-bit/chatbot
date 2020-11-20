@@ -1,0 +1,26 @@
+slots:
+  movie:
+    type: text
+
+
+intents:
+ - greet
+ - goodbye
+ - postermessage
+
+
+entities:
+ - movie
+
+responses:
+  utter_greet:
+    - text: 'Hello! How can I help?'
+  utter_goodbye:
+    - text: 'Talk to you later.'
+    - text: 'Bye bye :('
+  utter_ask_movie:
+    - text: 'what movie?'
+
+
+actions:
+ - action_poster
